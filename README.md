@@ -2,7 +2,6 @@
 
 ![image](https://user-images.githubusercontent.com/112471004/225152766-0950a4d0-928e-4c85-a6bc-78db604c0307.png)
 
-[![Build Status](https://travis-ci.org/<username>/<repo-name>.svg?branch=master)](https://travis-ci.org/<username>/<repo-name>)
 
 ## Overview
 This project displays CPU/GPU usage and GPU temperature on a 2x16 LCD using an Arduino UNO and a Python script. The Python script fetches the hardware information and sends it through a COM port every 3 seconds. The Arduino listens to the same COM port, receives the information, and prints it on the LCD.
