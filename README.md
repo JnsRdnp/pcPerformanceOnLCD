@@ -5,5 +5,4 @@ This video provided assistance in the process of managing communication between 
 - https://www.youtube.com/watch?v=dbZZlq1_M4o&list=LL&index=1&t=1678s
 
 
-![image](https://user-images.githubusercontent.com/112471004/225152695-935670c6-4873-4668-ac61-6383c044f9c6.png)=250x250
-
+<img src="https://user-images.githubusercontent.com/112471004/225152695-935670c6-4873-4668-ac61-6383c044f9c6.png" alt="image" width="300px">
