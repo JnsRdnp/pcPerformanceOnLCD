@@ -30,4 +30,4 @@ This project displays CPU/GPU usage and GPU temperature on a 2x16 LCD using an A
 ## Acknowledgements
 
 - This video provided assistance in the process of managing communication between Arduino UNO and the Python script.
-[![Video Name](https://i.imgur.com/0aRyCqb.png)](https://www.youtube.com/watch?v=dbZZlq1_M4o)
+[![Video Name](https://gyazo.com/014af6d6229031c6fa177c3022287f7b)](https://www.youtube.com/watch?v=dbZZlq1_M4o)
