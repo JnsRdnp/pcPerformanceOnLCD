@@ -10,12 +10,12 @@ This project displays CPU/GPU usage and GPU temperature on a 2x16 LCD using an A
 ---
 
 ## Installation
-Python:
+Python modules:
 - pip install pyserial
 - pip install psutil
 - pip install GPUtil
-- 
-Arduino:
+
+Arduino libraries:
 - LiquidCrystal I2C by Frank de Brabander
 ---
 
