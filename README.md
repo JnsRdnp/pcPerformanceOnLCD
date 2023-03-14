@@ -35,4 +35,5 @@ This project displays CPU/GPU usage and GPU temperature on a 2x16 LCD using an A
 ## Images
 
 <img src="https://user-images.githubusercontent.com/112471004/225152695-935670c6-4873-4668-ac61-6383c044f9c6.png" alt="image" width="300px">
----
+
+
