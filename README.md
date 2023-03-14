@@ -30,8 +30,8 @@ This project utilizes an Arduino UNO and a Python script to display CPU and GPU 
 </div>
 
 ---
-## Images and more
-
+## Images and problems
+- While I had initially planned to present the CPU temperature alongside the GPU temperature, it unfortunately proved to be a challenging task as psutil lacked support for this feature on non-Linux systems.
 <img src="https://user-images.githubusercontent.com/112471004/225152695-935670c6-4873-4668-ac61-6383c044f9c6.png" alt="image" width="300px">
 
 
