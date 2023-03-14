@@ -31,7 +31,7 @@ This project utilizes an Arduino UNO and a Python script to display CPU and GPU 
 </div>
 
 ---
-## Images
+## Images and more
 
 <img src="https://user-images.githubusercontent.com/112471004/225152695-935670c6-4873-4668-ac61-6383c044f9c6.png" alt="image" width="300px">
 
