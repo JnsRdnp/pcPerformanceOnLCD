@@ -1,4 +1,4 @@
-# "Displaying CPU and GPU Usage as well as GPU Temperature on a 2x16 LCD using an Arduino UNO and a Python script."
+# "CPU&GPU Usage and GPU temperature on a 2x16 LCD with Arduino and Python."
 
 ![image](https://user-images.githubusercontent.com/112471004/225152766-0950a4d0-928e-4c85-a6bc-78db604c0307.png)
 
