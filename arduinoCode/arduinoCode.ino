@@ -4,21 +4,21 @@ LiquidCrystal_I2C lcd(0x27,16,2);
 //0x27
 int a=0;
 void setup() {
-  // put your setup code here, to run once:
+
   Serial.begin(115200);
 
   lcd.init();
   lcd.clear();         
-  lcd.backlight();      // Make sure backlight is on
+  lcd.backlight();      
   
-  // Print a message on both lines of the LCD.
-  lcd.setCursor(0,0);   //Set cursor to character 2 on line 0
+
+  lcd.setCursor(0,0);   
   lcd.print("Booting up...");
 
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+
   myCmd=Serial.readStringUntil('\r');
 
   while(Serial.available()==0){
