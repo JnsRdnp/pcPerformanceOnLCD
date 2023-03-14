@@ -16,12 +16,14 @@ def get_gpu_info():
     gpus = GPUtil.getGPUs()
     if gpus:
         gpu = gpus[0]
-        return gpu.load*100
+        formatted_numGPU = f"{(gpu.load*100):.1f}".zfill(4)
+        return formatted_numGPU
     return None
 
 while True:
 
-    sysInfo=(str(psutil.cpu_percent(interval=1)) + "%| " + str(get_gpu_info())+"%| "+str(get_gpu_temperature()))
+    formatted_numCPU = f"{(psutil.cpu_percent(interval=1)):.1f}".zfill(4) 
+    sysInfo=(str(formatted_numCPU) + "%|" + str(get_gpu_info())+"%|"+str(get_gpu_temperature()))
     cmd=sysInfo
     cmd=cmd+'\r'
     arduinoData.write(cmd.encode())
