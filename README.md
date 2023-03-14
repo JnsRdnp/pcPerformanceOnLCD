@@ -20,12 +20,6 @@ This project displays CPU/GPU usage and GPU temperature on a 2x16 LCD using an A
 - `LiquidCrystal I2C` by Frank de Brabander
 ---
 
-## Screenshots
-
-<img src="https://user-images.githubusercontent.com/112471004/225152695-935670c6-4873-4668-ac61-6383c044f9c6.png" alt="image" width="300px">
-
----
-
 ## Acknowledgements
 
 - This video provided assistance in the process of managing communication between Arduino UNO and the Python script.
@@ -36,3 +30,9 @@ This project displays CPU/GPU usage and GPU temperature on a 2x16 LCD using an A
   <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-shadow: 0px 0px 10px black; font-weight: bold; font-size: 16px;">
   </div>
 </div>
+
+---
+## Images
+
+<img src="https://user-images.githubusercontent.com/112471004/225152695-935670c6-4873-4668-ac61-6383c044f9c6.png" alt="image" width="300px">
+---
