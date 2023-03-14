@@ -32,7 +32,7 @@ This project displays CPU/GPU usage and GPU temperature on a 2x16 LCD using an A
 - This video provided assistance in the process of managing communication between Arduino UNO and the Python script.
 
 <div style="position: relative;">
-    Video Title
+    <em>Using an Arduino with Python LESSON 10: Passing Data from Python to Arduino</em>
   <img src="https://img.youtube.com/vi/dbZZlq1_M4o/maxresdefault.jpg?width=200" alt="Video Thumbnail" style="width: 100%;">
   <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-shadow: 0px 0px 10px black; font-weight: bold; font-size: 16px;">
   </div>
