@@ -33,6 +33,9 @@ This project displays CPU/GPU usage and GPU temperature on a 2x16 LCD using an A
 [![Using an Arduino with Python LESSON 10: Passing Data from Python to Arduino](https://img.youtube.com/vi/dbZZlq1_M4o/maxresdefault.jpg?width=200)](https://www.youtube.com/watch?v=dbZZlq1_M4o "Using an Arduino with Python LESSON 10: Passing Data from Python to Arduino")
 
 
-<a href="https://www.youtube.com/watch?v=dbZZlq1_M4o" title="Video Name">
-    <img src="https://img.youtube.com/vi/dbZZlq1_M4o/maxresdefault.jpg?width=200">
-</a>
+<div style="position: relative;">
+  <img src="https://img.youtube.com/vi/dbZZlq1_M4o/maxresdefault.jpg?width=200" alt="Video Thumbnail" style="width: 100%;">
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-shadow: 0px 0px 10px black; font-weight: bold; font-size: 16px;">
+    Video Title
+  </div>
+</div>
