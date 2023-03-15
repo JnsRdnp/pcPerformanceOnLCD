@@ -1,10 +1,12 @@
 String myCmd;
 String myTime;
+
+#include <string.h>
 #include <LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd(0x27,16,2); 
+
 //0x27
-int a=0;
-int stateOfInput = 0;
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
@@ -19,46 +21,45 @@ void setup() {
 
 }
 
+bool findStr(String s,String f){
+  String this_str = s;
+  String search_str = f;
+
+  // Convert both strings to lowercase to perform a case-insensitive search
+  this_str.toLowerCase();
+  search_str.toLowerCase();
+
+    if (this_str.indexOf(search_str) != -1) {
+      return true;
+    } else {
+      Serial.println("Did not find");
+      return false;
+    }
+
+  delay(1000);
+}
+
+
 void loop() {
   // put your main code here, to run repeatedly:
+  myCmd=Serial.readStringUntil('\r');
+  lcd.clear();  
 
-
-  switch (stateOfInput){
-    case 0:
-      myCmd=Serial.readStringUntil('\r');
-      break;
-
-    default:
-      myTime=Serial.readStringUntil('\r');
-      break;
-
+  if (findStr(myCmd,"%")){
+    lcd.setCursor(0,1);
+    lcd.print(myCmd+((char)223)+"C");
+    lcd.setCursor(0,0);
+    lcd.print(" CPU | GPU | TMP");
+    delay(100);
   }
- 
+  if (findStr(myCmd,":")){
+    lcd.setCursor(0,0);
+    lcd.print(myCmd.substring(5)+" "+(char)223+"C");
+    lcd.setCursor(0,1);
+    lcd.print(myCmd.substring(0,5));
+  }
+
   while(Serial.available()==0){
 
   }
-
-
-  switch (stateOfInput) {
-    case 0:
-        lcd.clear();
-        stateOfInput = 1;
-        lcd.setCursor(0,1);
-        lcd.print(myCmd+((char)223));
-        lcd.setCursor(0,0);
-        lcd.print(" CPU | GPU | TMP");
-        delay(100);
-        break;
-    default:
-        lcd.setCursor(0,1);
-        lcd.print(myCmd+((char)223));
-        lcd.setCursor(6,0);
-        lcd.print(myTime);
-        delay(100);
-        stateOfInput = 0;
-        break;
   }
-
-
-
-}
