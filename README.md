@@ -26,6 +26,7 @@ This small project utilizes an Arduino UNO and a Python script to display CPU an
 
 
     <em>Using an Arduino with Python LESSON 10: Passing Data from Python to Arduino</em>
+    - https://www.youtube.com/watch?v=dbZZlq1_M4o
 
 
 ---
