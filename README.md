@@ -13,6 +13,8 @@ This small project utilizes an Arduino UNO and a Python script to display CPU an
 - `pyserial`: `pip install pyserial`
 - `psutil`: `pip install psutil`
 - `GPUtil`: `pip install GPUtil`
+- `requests_html`: `pip install requests_html`
+
 
 ### Arduino Libraries
 - `LiquidCrystal I2C` by Frank de Brabander
