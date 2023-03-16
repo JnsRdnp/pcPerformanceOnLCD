@@ -26,7 +26,12 @@ def getTempertature(city):
     #print(r.html.find('title',first = True).text)
     title_text = r.html.find('title', first=True).text
 
-    weatheroutput = "Oulu: "+str(r.html.find('span#wob_tm',first = True).text)
+    try:
+        weatheroutput = "Oulu: " + str(r.html.find('span#wob_tm', first=True).text)
+    except Exception as e:
+        print("An error occurred while getting the weather:", e)
+        
+    weatheroutput = "Weather information unavailable"
     #print(myCmd)
     return weatheroutput
 
@@ -66,7 +71,5 @@ while True:
 
 
 
-
-    
 
     
