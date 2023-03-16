@@ -30,8 +30,7 @@ def getTempertature(city):
         weatheroutput = "Oulu: " + str(r.html.find('span#wob_tm', first=True).text)
     except Exception as e:
         print("An error occurred while getting the weather:", e)
-        
-    weatheroutput = "Weather information unavailable"
+        weatheroutput = "Weather information unavailable"
     #print(myCmd)
     return weatheroutput
 
